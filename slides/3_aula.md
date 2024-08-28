@@ -95,7 +95,7 @@ Por favor, digite um número: 50
 
 ---
 
-## Listas em Python 🐍
+## Lista em Python 🐍
 *Coleção de valores em uma ordem específica*
 
 ```pycon
@@ -271,7 +271,7 @@ Em um arquivo `.py`, teste cada um desses comandos.
 ---
 
 ## O Tipo `range`
-**Sequência imutável de números**
+*Sequência imutável de números*
 
 - O range se comporta como um objeto do tipo `list`.
 - É possível construir uma lista de números com `range`.
@@ -374,7 +374,7 @@ for variável in lista:
 
 1. Escreva um laço `for` que imprima os números de 1 a 20.
 2. Crie uma lista contendo os números de 1 até 1.000.000. Use um loop `for` para imprimir cada número.$^1$
-3. Verifique se a lista começa em 1 e termina em 1.000.000 usando as funções `min()` e `max()`. Em seguida, use a função `sum()` para calcular a soma de todos os números da lista.
+3. Verifique se a lista começa em 1 e termina em 1.000.000 usando as funções `min()` e `max()`. Em seguida, use a função `sum()` para calcular a soma de todos os números da lista, depois, calcule a media dos valores da lista.
 
 <!-- _footer: Se a saída demorar muito, você pode interromper o processo pressionando `CTRL-C` ou fechando o terminal. -->
 
@@ -579,3 +579,79 @@ Listas que contêm outras listas
 2
 ```
 
+---
+
+
+<div class="columns">
+<div>
+
+### Separando Strings
+
+</div>
+<div>
+
+### Juntando Strings
+
+</div>
+</div>
+
+```py
+nome_completo = "João Carlos da Costa Silva"
+```
+
+<div class="columns">
+<div>
+
+`.split()`
+
+```pycon
+>>> nomes = nome_completo.split()
+>>> print(nomes)
+['João', 'Carlos', 'da', 'Costa', 'Silva']
+>>> print("O sobrenome é", nomes[-1])
+O sobrenome é Silva
+```
+
+</div>
+<div>
+
+
+`" ".join(lista)`
+
+```pycon
+>>> nome = " ".join(nomes[:2])
+>>> print(nome)
+João Carlos
+```
+
+</div>
+</div>
+
+---
+
+## ⚙️ Exercícios
+
+Construa um programa que leia uma lista
+de números usando `input()`. Por exemplo:
+
+```pycon
+>>> input("Forneça diversos números separados por espaço: ")
+Forneça diversos números separados por espaço: 10 4 44 12 75 96
+```
+- Some todos os números.
+- Encontre o maior e o menor valor.
+- Calcule a média desconsiderando o maior e o menor valor.
+- Imprima todos os resultados na tela.
+
+---
+
+
+# Introdução à Programação em
+
+![w:900](https://www.python.org/static/community_logos/python-logo-generic.svg)
+
+https://evandro-crr.github.io/intro-python
+
+
+<!-- _footer: Evandro Chagas Ribeiro da Rosa -->
+<!-- _paginate: skip -->

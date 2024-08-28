@@ -9,9 +9,14 @@ header: https://evandro-crr.github.io/intro-python
 footer: Evandro Chagas Ribeiro da Rosa
 ---
 
+<style>
+@import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
+</style>
+
 ![bg left:30% 90%](https://api.qrserver.com/v1/create-qr-code/?format=svg&data=https://evandro-crr.github.io/intro-python)
 
 **Introdução à Programação<br>em Python** 🐍
 
-- [Aula 1 : Introdução](slides/1_aula.html)
-- [Aula 2 : Strings e Números](slides/2_aula.html)
+- [Aula 1 : Introdução](slides/1_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/1_aula.pdf)
+- [Aula 2 : Strings e Números](slides/2_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/2_aula.pdf)
+- [Aula 3 : Lista](slides/3_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/3_aula.pdf)
