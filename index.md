@@ -5,13 +5,14 @@ author: Evandro Chagas Ribeiro da Rosa <evandro@univali.br>
 title: Introdução à Programação em Python
 backgroundColor: white
 math: mathjax
-header: https://evandro-crr.github.io/intro-python
 footer: Evandro Chagas Ribeiro da Rosa
 ---
 
 <style>
 @import 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css';
 </style>
+
+[evandro-crr.github.io/intro-python](https://evandro-crr.github.io/intro-python) 
 
 ![bg left:30% 90%](https://api.qrserver.com/v1/create-qr-code/?format=svg&data=https://evandro-crr.github.io/intro-python)
 
