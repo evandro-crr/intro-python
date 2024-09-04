@@ -21,3 +21,4 @@ footer: Evandro Chagas Ribeiro da Rosa
 - [Aula 1 : Introdução](slides/1_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/1_aula.pdf)
 - [Aula 2 : Strings e Números](slides/2_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/2_aula.pdf)
 - [Aula 3 : Lista](slides/3_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/3_aula.pdf)
+- [Aula 4 : `if` e `while`](slides/4_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/4_aula.pdf)
