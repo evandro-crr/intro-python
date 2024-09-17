@@ -22,3 +22,14 @@ footer: Evandro Chagas Ribeiro da Rosa
 - [Aula 2 : Strings e Números](slides/2_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/2_aula.pdf)
 - [Aula 3 : Lista](slides/3_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/3_aula.pdf)
 - [Aula 4 : `if` e `while`](slides/4_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/4_aula.pdf)
+
+---
+
+[evandro-crr.github.io/intro-python](https://evandro-crr.github.io/intro-python) 
+
+![bg left:30% 90%](https://api.qrserver.com/v1/create-qr-code/?format=svg&data=https://evandro-crr.github.io/intro-python)
+
+**Introdução à Programação<br>em Python** 🐍
+
+- [Aula 5 : Dicionario](slides/5_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/5_aula.pdf)
+
