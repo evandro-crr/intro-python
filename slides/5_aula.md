@@ -194,8 +194,8 @@ Contato de Bruno: (21) 99876-5432
 
 **Análise de Notas dos Alunos**
 
-- Implemente um sistema que permita registrar as notas dos alunos uma disciplinas e, ao final, gere um relatório detalhado com a média das notas de cada aluno e a média geral da turma:
-  1. **Cadastro de alunos**: O usuário deve cadastrar os alunos e as disciplinas oferecidas. O cadastro será concluído quando o usuário decidir parar de adicionar alunos e disciplinas.
+- Implemente um sistema que permita registrar as notas dos alunos em uma disciplina e, ao final, gere um relatório com a média das notas de cada aluno e a média geral da turma:
+  1. **Cadastro de alunos**: O usuário deve cadastrar os alunos e a disciplina oferecidas. O cadastro será concluído quando o usuário decidir parar de adicionar alunos.
   2. **Registro de notas**:  Após o cadastro dos alunos, o sistema solicitará o número avaliações. Em seguida, o sistema deve solicitar as notas de cada aluno.
   3. **Relatório final**: No final, o sistema exibirá:
      - A nota média de cada aluno.
