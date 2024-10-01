@@ -13,8 +13,9 @@ html: $(HTML)
 pdf: $(PDF)
 
 deploy: html pdf index.html
-	mkdir -p public/slides
+	mkdir -p public/{slides,listas}
 	cp slides/*.{html,pdf} public/slides/
+	cp listas/*.pdf public/listas
 	cp index.html public/
 	pipx run ghp-import public -p -o
 	echo https://evandro-crr.github.io/intro-python

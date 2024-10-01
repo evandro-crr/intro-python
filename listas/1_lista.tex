@@ -1,0 +1,201 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[brazil]{babel}
+\usepackage{amsmath}
+\usepackage{minted}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+
+\title{Introdução à Programação em Python\\
+\large I Lista de Exercícios}
+\author{Prof. Evandro C. R. Rosa\\UNIVALI}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent Nome Completo: \underline{\hspace{8cm}} Código de Aluno: \underline{\hspace{2.4cm}}
+
+\begin{enumerate}
+  \item Crie um programa que verifique se uma palavra ou frase é um palíndromo, ou seja, se é lida da mesma maneira de trás para frente.
+
+  \item Desenvolva um programa que permita ao usuário converter uma lista de temperaturas de Celsius para Fahrenheit e vice-versa. O programa deve conter as seguintes funções:
+    \begin{itemize}
+      \item \mintinline{py}|celsius_para_fahrenheit(celsius)|: converte uma lista de temperaturas em Celsius para Fahrenheit.
+      \item \mintinline{py}|fahrenheit_para_celsius(fahrenheit)|: converte uma lista de temperaturas em Fahrenheit para Celsius.
+      \item \mintinline{py}|exibir_temperaturas(lista)|: exibe a lista de temperaturas convertidas.
+    \end{itemize}
+    \textbf{Dicas:}
+    \begin{itemize}
+      \item Utilize as fórmulas de conversão:
+        \begin{itemize}
+          \item Fahrenheit = (Celsius $\times$ 9/5) + 32
+          \item Celsius = (Fahrenheit - 32) $\times$ 5/9
+        \end{itemize}
+      \item Peça ao usuário para fornecer a lista de temperaturas e a direção da conversão.
+    \end{itemize}
+
+  \item Crie um programa que calcule a média ponderada das notas de um aluno. As notas e os pesos devem ser fornecidos pelo usuário e armazenados em listas. O programa deve ter as seguintes funções:
+    \begin{itemize}
+      \item \mintinline{py}|calcular_media_ponderada(notas, pesos)|: recebe uma lista de notas e uma lista de pesos e calcula a média ponderada.
+      \item \mintinline{py}|solicitar_dados()|: solicita ao usuário as notas e os pesos correspondentes.
+    \end{itemize}
+    \textbf{Dicas:}
+    \begin{itemize}
+      \item Multiplique cada nota pelo seu peso, some os resultados e divida pela soma dos pesos para obter a média ponderada.
+      \item As listas de notas e pesos devem ter o mesmo tamanho.
+    \end{itemize}
+
+    \newpage
+
+  \item Crie um programa que permita cadastrar alunos e suas notas, armazenando as informações em um dicionário. O programa deve ter as seguintes funções:
+    \begin{itemize}
+      \item \mintinline{py}|cadastrar_aluno(nome, nota)|: adiciona um aluno e sua nota ao dicionário.
+      \item \mintinline{py}|mostrar_alunos()|: exibe a lista de alunos e suas respectivas notas.
+      \item \mintinline{py}|media_turma()|: calcula e retorna a média das notas da turma.
+    \end{itemize}
+    \textbf{Dicas:}
+    \begin{itemize}
+      \item Utilize um dicionário para armazenar os alunos (chaves) e suas notas (valores).
+      \item A função \mintinline{py}|mostrar_alunos| pode percorrer o dicionário e exibir o nome e a nota de cada aluno.
+    \end{itemize}
+
+  \item Escreva um programa que conte a frequência de cada palavra em uma frase fornecida pelo usuário. O programa deve incluir as seguintes funções:
+    \begin{itemize}
+      \item \mintinline{py}|contar_palavras(frase)|: conta a frequência de cada palavra em uma frase e armazena em um dicionário.
+      \item \mintinline{py}|mostrar_frequencia(frequencia)|: exibe a palavra e o número de ocorrências de cada uma.
+    \end{itemize}
+    \textbf{Dicas:}
+    \begin{itemize}
+      \item Use o método \mintinline{py}|split()| para dividir a frase em palavras.
+      \item Utilize um dicionário para armazenar as palavras como chaves e suas frequências como valores.
+    \end{itemize}
+
+  \item Implemente um programa para gerenciar uma lista de compras. O programa deve conter as seguintes funções:
+    \begin{itemize}
+      \item \mintinline{py}|adicionar_item(lista, item, quantidade)|: adiciona um item à lista de compras com sua quantidade.
+      \item \mintinline{py}|remover_item(lista, item)|: remove um item da lista.
+      \item \mintinline{py}|mostrar_lista(lista)|: exibe todos os itens da lista e suas respectivas quantidades.
+    \end{itemize}
+    \textbf{Dicas:}
+    \begin{itemize}
+      \item A lista de compras pode ser um dicionário onde as chaves são os itens e os valores são as quantidades.
+      \item Para remover um item, verifique se ele existe no dicionário antes de tentar removê-lo.
+    \end{itemize}
+
+    \newpage
+
+  \item Crie um programa que peça ao usuário uma lista de números e forneça as seguintes estatísticas sobre a lista, utilizando funções:
+    \begin{itemize}
+      \item \mintinline{py}|menor_numero(lista)|: retorna o menor número da lista.
+      \item \mintinline{py}|maior_numero(lista)|: retorna o maior número da lista.
+      \item \mintinline{py}|media(lista)|: retorna a média dos números da lista.
+      \item \mintinline{py}|ocorrencias(lista)|: retorna um dicionário com a frequência de cada número na lista.
+    \end{itemize}
+    \textbf{Dicas:}
+    \begin{itemize}
+      \item Use as funções embutidas \mintinline{py}|min()|, \mintinline{py}|max()| e \mintinline{py}|sum()| para calcular o menor, o maior e a média dos números.
+      \item Para contar a frequência de cada número, utilize um dicionário onde a chave é o número e o valor é o número de ocorrências.
+    \end{itemize}
+  \item Crie um sistema para registrar e analisar as notas de uma turma. O programa deve conter as seguintes funções:
+    \begin{itemize}
+      \item \mintinline{py}|adicionar_nota(dicionario, aluno, nota)|: adiciona a nota de um aluno ao dicionário.
+      \item \mintinline{py}|mostrar_aprovados(dicionario)|: exibe os alunos aprovados (nota $\geq$ 7.0).
+      \item \mintinline{py}|media_turma(dicionario)|: retorna a média das notas da turma.
+    \end{itemize}
+    \textbf{Dicas:}
+    \begin{itemize}
+      \item Utilize um dicionário onde as chaves são os nomes dos alunos e os valores são as notas.
+      \item Para calcular a média da turma, some todas as notas e divida pelo número de alunos.
+    \end{itemize}
+
+  \item Crie um programa que conte a frequência de cada caractere em uma string fornecida pelo usuário. O programa deve conter as seguintes funções:
+    \begin{itemize}
+      \item \mintinline{py}|contar_caracteres(string)|: conta a frequência de cada caractere e armazena os resultados em um dicionário.
+      \item \mintinline{py}|mostrar_frequencia(frequencia)|: exibe o caractere e o número de vezes que ele aparece na string.
+    \end{itemize}
+    \textbf{Dicas:}
+    \begin{itemize}
+      \item Utilize um dicionário para armazenar os caracteres como chaves e suas frequências como valores.
+      \item Ignore espaços em branco ou outros caracteres que não sejam letras ou números.
+    \end{itemize}
+
+    \newpage
+
+  \item Crie um programa para gerenciar uma lista de tarefas. O programa deve permitir adicionar, remover e marcar tarefas como concluídas. Ele deve conter as seguintes funções:
+    \begin{itemize}
+      \item \mintinline{py}|adicionar_tarefa(lista, tarefa)|: adiciona uma nova tarefa à lista de tarefas.
+      \item \mintinline{py}|remover_tarefa(lista, tarefa)|: remove uma tarefa da lista.
+      \item \mintinline{py}|concluir_tarefa(lista, tarefa)|: marca uma tarefa como concluída.
+      \item \mintinline{py}|mostrar_tarefas(lista)|: exibe a lista de tarefas, indicando quais foram concluídas.
+    \end{itemize}
+    \textbf{Dicas:}
+    \begin{itemize}
+      \item Utilize uma lista de dicionários, onde cada tarefa é um dicionário com as chaves \mintinline{py}|tarefa| e \mintinline{py}|concluida| (booleano que indica se a tarefa foi concluída).
+    \end{itemize}
+
+  \item Desenvolva um programa que permita ao usuário filtrar uma lista de produtos com base em critérios como preço e categoria. O programa deve conter as seguintes funções:
+    \begin{itemize}
+      \item \mintinline{py}|adicionar_produto(produtos, nome, preco, categoria)|: adiciona um produto à lista de produtos com seu nome, preço e categoria.
+      \item \mintinline{py}|filtrar_por_preco(produtos, preco_minimo, preco_maximo)|: exibe todos os produtos cujo preço está dentro do intervalo fornecido.
+      \item \mintinline{py}|filtrar_por_categoria(produtos, categoria)|: exibe todos os produtos de uma categoria específica.
+    \end{itemize}
+    \textbf{Dicas:}
+    \begin{itemize}
+      \item Utilize uma lista de dicionários, onde cada produto tem as chaves \mintinline{py}|nome|, \mintinline{py}|preco| e \mintinline{py}|categoria|.
+      \item Filtre os produtos iterando sobre a lista e verificando os critérios.
+    \end{itemize}
+
+  \item Crie um jogo onde o programa escolhe uma palavra aleatória de uma lista, embaralha as letras e pede ao usuário para adivinhar a palavra correta. O programa deve conter as seguintes funções:
+    \begin{itemize}
+      \item \mintinline{py}|embaralhar_palavra(palavra)|: embaralha as letras de uma palavra.
+      \item \mintinline{py}|escolher_palavra(lista_palavras)|: escolhe uma palavra aleatória de uma lista de palavras.
+      \item \mintinline{py}|jogar(lista_palavras)|: inicia o jogo e interage com o usuário.
+    \end{itemize}
+    \textbf{Dicas:}
+    \begin{itemize}
+      \item Utilize o módulo \mintinline{py}|random| para escolher a palavra e embaralhá-la.
+      \item Crie uma lista de palavras que o programa poderá utilizar.
+    \end{itemize}
+
+    \newpage
+
+  \item Escreva um programa para calcular a média das notas de alunos em diferentes disciplinas. O programa deve permitir que o usuário insira as notas por disciplina e retorne a média de cada uma. Ele deve conter as seguintes funções:
+    \begin{itemize}
+      \item \mintinline{py}|adicionar_nota(disciplinas, disciplina, nota)|: adiciona a nota de uma disciplina à lista de notas daquela disciplina.
+      \item \mintinline{py}|calcular_media_disciplinas(disciplinas)|: calcula e retorna a média de notas de cada disciplina.
+      \item \mintinline{py}|mostrar_disciplinas(disciplinas)|: exibe todas as disciplinas com as médias de notas calculadas.
+    \end{itemize}
+    \textbf{Dicas:}
+    \begin{itemize}
+      \item Utilize um dicionário onde as chaves são as disciplinas e os valores são listas de notas.
+      \item Para calcular a média de uma disciplina, some as notas da lista e divida pela quantidade de notas.
+    \end{itemize}
+
+  \item Escreva um programa que permita ao usuário adicionar produtos com preços e listar os produtos em ordem crescente ou decrescente de preço. Ele deve conter as seguintes funções:
+    \begin{itemize}
+      \item \mintinline{py}|adicionar_produto(produtos, nome, preco)|: adiciona um produto à lista de produtos.
+      \item \mintinline{py}|ordenar_produtos(produtos, ordem)|: ordena os produtos por preço em ordem crescente ou decrescente, conforme a escolha do usuário.
+      \item \mintinline{py}|mostrar_produtos(produtos)|: exibe todos os produtos com seus preços.
+    \end{itemize}
+    \textbf{Dicas:}
+    \begin{itemize}
+      \item Utilize uma lista de dicionários, onde cada dicionário contém o nome e o preço de um produto.
+      \item A função \mintinline{py}|sorted()| pode ser usada para ordenar a lista com base no preço.
+    \end{itemize}
+
+  \item Desenvolva um programa para ajudar o usuário a controlar suas despesas pessoais. O programa deve permitir registrar despesas em diferentes categorias e calcular o total gasto em cada categoria. Ele deve conter as seguintes funções:
+    \begin{itemize}
+      \item \mintinline{py}|adicionar_despesa(despesas, categoria, valor)|: registra uma nova despesa em uma categoria específica.
+      \item \mintinline{py}|calcular_total_categoria(despesas, categoria)|: calcula o total de despesas em uma categoria específica.
+      \item \mintinline{py}|mostrar_resumo_despesas(despesas)|: exibe o total de despesas em todas as categorias.
+    \end{itemize}
+    \textbf{Dicas:}
+    \begin{itemize}
+      \item Utilize um dicionário onde as chaves são as categorias e os valores são listas de despesas.
+      \item Para calcular o total, some todos os valores dentro da lista de uma categoria.
+    \end{itemize}
+\end{enumerate}
+
+\end{document}

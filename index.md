@@ -33,4 +33,4 @@ footer: Evandro Chagas Ribeiro da Rosa
 
 - [Aula 5 : Dicionario](slides/5_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/5_aula.pdf)
 - [Aula 6 : Função](slides/6_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/6_aula.pdf)
-
+- [Lista 1 <i class="fa fa-file" aria-hidden="true"></i>](listas/1_lista.pdf)
