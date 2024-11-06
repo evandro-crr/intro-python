@@ -1,0 +1,120 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[brazil]{babel}
+\usepackage{amsmath}
+\usepackage{minted}
+\usepackage{caption}
+\usepackage{amssymb}
+\usepackage{subcaption}
+\usepackage{graphicx}
+
+\title{Introdução à Programação em Python\\
+\large Trabalho 2: Batalha Naval}
+\author{Prof. Evandro C. R. Rosa\\UNIVALI}
+\date{}
+
+\begin{document}
+\maketitle
+
+\section*{Objetivo}
+
+O objetivo deste trabalho é avaliar o uso de funções para modularizar o código e dicionários para estruturar dados. O desafio consiste na implementação de um jogo de Batalha Naval, onde o jogador enfrentará o computador. O jogo deve permitir o posicionamento de navios em um tabuleiro e ser jogado em turnos alternados.
+
+\section*{Descrição do Jogo}
+
+\subsection*{Inicialização do Tabuleiro}
+
+O jogador deve posicionar os navios listados abaixo em um tabuleiro de $10\times10$. Os navios podem ser colocados tanto na vertical quanto na horizontal, mas não podem se tocar. Os navios são os seguintes:
+\begin{itemize}
+  \item 1$\times$ Porta-aviões (5 quadrados)
+  \item 2$\times$ Navios-tanque (4 quadrados cada)
+  \item 3$\times$ Contratorpedeiros (3 quadrados cada)
+  \item 4$\times$ Submarinos (2 quadrados cada)
+\end{itemize}
+
+O tabuleiro do adversário (computador) deve ser gerado automaticamente, respeitando as mesmas regras. O jogador não poderá ver o tabuleiro do computador.
+
+\subsection*{Exibição dos Tabuleiros}
+
+A cada turno, o jogador deve visualizar dois tabuleiros:
+\begin{itemize}
+  \item O tabuleiro com seus próprios navios, indicando onde foram realizados os ataques do adversário (incluindo tiros na água e navios atingidos).
+  \item O tabuleiro onde o jogador está atacando, mostrando os tiros que ele efetuou contra o adversário e quais navios foram atingidos.
+\end{itemize}
+
+Cada posição do tabuleiro é identificada por uma combinação de letra e número, conforme ilustrado:
+
+\begin{center}
+
+  \begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|}
+    & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 \\
+    \hline
+    A & &&&&&&&&&\\
+    \hline
+    B & &&&&&&&&&\\
+    \hline
+    C & &&&&&&&&&\\
+    \hline
+    D & &&&&&&&&&\\
+    \hline
+    E & &&&&&&&&&\\
+    \hline
+    F & &&&&&&&&&\\
+    \hline
+    G & &&&&&&&&&\\
+    \hline
+    H & &&&&&&&&&\\
+    \hline
+    I & &&&&&&&&&\\
+    \hline
+    J & &&&&&&&&&\\
+    \hline
+  \end{tabular}
+\end{center}
+
+\subsection*{Regras do Jogo}
+
+O jogo é jogado em turnos alternados entre o jogador e o computador. O jogador começa escolhendo uma posição no tabuleiro do adversário para atirar. As regras para os disparos e turnos são as seguintes:
+
+\begin{itemize}
+  \item {Tiro na água}: Nenhum navio foi atingido, e o turno termina.
+
+  \item {Acerto em um navio}: Se o jogador acertar um navio inimigo, ele pode jogar novamente. Se o navio for destruído, o tipo de navio será informado ao jogador.
+  \item {Disparos repetidos}: Não é permitido atirar na mesma coordenada mais de uma vez.
+  \item {Condição de vitória}: O jogo termina quando todas as embarcações de um dos lados forem destruídas.
+\end{itemize}
+
+O computador segue as mesmas regras, realizando seus disparos de forma aleatória.
+
+
+\section*{Implementação}
+
+O código do jogo deve ser dividido em funções bem definidas. Cada função deve ser responsável por uma parte específica da lógica do jogo. Exemplos de funções a serem implementadas incluem:
+\begin{itemize}
+  \item Função para exibir os tabuleiros.
+  \item Função para registrar a jogada do jogador.
+  \item Função para verificar a condição de vitória ou derrota ao final de cada turno.
+\end{itemize}
+
+Além disso, recomenda-se o uso de dicionários para armazenar o estado do jogo, como a posição dos navios e as coordenadas dos tiros já realizados.
+
+\section*{Critérios de Avaliação}
+
+A avaliação do trabalho será baseada nos seguintes critérios:
+\begin{enumerate}
+  \item Implementação correta da lógica do jogo, incluindo a validação das jogadas e a verificação adequada da condição de vitória ou derrota.
+  \item Uso adequado de funções. O código deve ser modular, com funções claras e objetivas. Embora não haja uma quantidade mínima de funções, é preferível utilizar várias funções curtas em vez de poucas funções longas.
+  \item Organização e legibilidade do código, bem como a clareza na apresentação das informações (tabuleiros, resultados de jogadas, etc.).
+\end{enumerate}
+
+O trabalho deve ser entregue até a data e horário estipulados no material didático. A avaliação incluirá uma defesa do código, na qual os integrantes do grupo devem explicar a implementação. A nota será individual, com base nas respostas de cada membro.
+
+O trabalho pode ser realizado em grupos de até três alunos. Embora o desenvolvimento possa ser dividido entre os membros, todos devem conhecer e entender o código por completo.
+
+\section*{Funcionalidade Extra (Opcional)}
+
+Para os alunos que desejarem, é possível implementar uma funcionalidade extra que torne o comportamento do computador mais estratégico. O computador poderá fazer seus disparos com base nas informações do tabuleiro, considerando os acertos anteriores para ajustar suas jogadas futuras.
+
+Essa funcionalidade não é obrigatória para obter a nota máxima, mas pode acrescentar até um ponto adicional à nota do trabalho.
+
+\end{document}
