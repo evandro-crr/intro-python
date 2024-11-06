@@ -6,15 +6,16 @@ PDF = $(SLIDES:.md=.pdf)
 	npx @marp-team/marp-cli@latest $< -o $@ --html 1
 
 %.pdf: %.md
-	npx @marp-team/marp-cli@latest $< -o $@ --html 1
+	npx @marp-team/marp-cli@latest $< -o $@ --html 1 --allow-local-files
 
 html: $(HTML)
 
 pdf: $(PDF)
 
 deploy: html pdf index.html
-	mkdir -p public/{slides,listas}
+	mkdir -p public/{slides/img,listas}
 	cp slides/*.{html,pdf} public/slides/
+	cp slides/img/*.{svg,jpg} public/slides/img/
 	cp listas/*.pdf public/listas
 	cp index.html public/
 	pipx run ghp-import public -p -o

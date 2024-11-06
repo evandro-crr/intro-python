@@ -34,3 +34,13 @@ footer: Evandro Chagas Ribeiro da Rosa
 - [Aula 5 : Dicionario](slides/5_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/5_aula.pdf)
 - [Aula 6 : Função](slides/6_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/6_aula.pdf)
 - [Lista 1 <i class="fa fa-file" aria-hidden="true"></i>](listas/1_lista.pdf)
+
+---
+
+[evandro-crr.github.io/intro-python](https://evandro-crr.github.io/intro-python) 
+
+![bg left:30% 90%](https://api.qrserver.com/v1/create-qr-code/?format=svg&data=https://evandro-crr.github.io/intro-python)
+
+**Introdução à Programação<br>em Python** 🐍
+
+- [Aula 7 : Introdução a Classes](slides/7_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/7_aula.pdf)
