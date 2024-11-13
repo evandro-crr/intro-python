@@ -44,3 +44,5 @@ footer: Evandro Chagas Ribeiro da Rosa
 **Introdução à Programação<br>em Python** 🐍
 
 - [Aula 7 : Introdução a Classes](slides/7_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/7_aula.pdf)
+- [Aula 8 : Arquivos e Exceção](slides/8_aula.html) [<i class="fa fa-download" aria-hidden="true"></i>](slides/8_aula.pdf)
+- [Lista 2 <i class="fa fa-file" aria-hidden="true"></i>](listas/2_lista.pdf)

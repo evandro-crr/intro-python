@@ -1,0 +1,93 @@
+\documentclass[12pt]{article}
+\usepackage[a4paper, left=2cm, right=2cm, top=2cm, bottom=2cm]{geometry}
+\usepackage[brazil]{babel}
+\usepackage{amsmath}
+\usepackage{minted}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{graphicx}
+
+\title{Introdução à Programação em Python\\
+\large II Lista de Exercícios}
+\author{Prof. Evandro C. R. Rosa\\UNIVALI}
+\date{}
+
+\begin{document}
+\maketitle
+
+\noindent Nome Completo: \underline{\hspace{8cm}} Código de Aluno: \underline{\hspace{2.4cm}}
+
+\begin{enumerate}
+
+  \item Crie uma classe \texttt{Produto} com os seguintes atributos:
+    \begin{itemize}
+      \item \texttt{codigo}: um número inteiro único que identifica cada produto.
+      \item \texttt{nome}: o nome do produto.
+      \item \texttt{preco}: o preço do produto, que deve ser do tipo \texttt{float}.
+    \end{itemize}
+    A classe deve incluir os seguintes métodos:
+    \begin{itemize}
+      \item \texttt{\_\_init\_\_}: para inicializar os valores dos atributos \texttt{codigo}, \texttt{nome} e \texttt{preco}.
+      \item \texttt{\_\_str\_\_}: que retorna uma string formatada contendo o \texttt{codigo}, o \texttt{nome} e o \texttt{preco} do produto.
+    \end{itemize}
+
+    Em seguida, implemente um programa que permita ao usuário inserir os dados de vários produtos (código, nome e preço). O programa deve armazenar esses dados em uma lista de objetos da classe \texttt{Produto} e, ao final, salvar essa lista em um arquivo chamado \texttt{produtos.json}. Utilize a biblioteca \texttt{json} para salvar os dados no formato JSON. Além disso, implemente tratamento de exceções para garantir que o preço inserido seja um valor numérico válido do tipo \texttt{float}.
+
+  \item Desenvolva um programa que leia os dados do arquivo \texttt{produtos.json} (gerado no exercício anterior). O programa deve converter os dados de volta para uma lista de objetos da classe \texttt{Produto} e exibir o código, nome e preço de cada produto. O programa também deve incluir tratamento de exceções para garantir que o arquivo exista antes de ser aberto. Caso o arquivo não seja encontrado ou se o conteúdo do arquivo não for um JSON válido, o programa deve capturar a exceção e exibir uma mensagem informando o erro.
+
+  \item Crie uma classe \texttt{ContaBancaria} com os seguintes atributos:
+    \begin{itemize}
+      \item \texttt{titular}: o nome do titular da conta.
+      \item \texttt{numero}: um número único que identifica a conta.
+      \item \texttt{saldo}: o saldo da conta, que deve ser inicialmente 0.
+    \end{itemize}
+    A classe deve incluir os seguintes métodos:
+    \begin{itemize}
+      \item \texttt{depositar}: para realizar um depósito, adicionando um valor ao saldo.
+      \item \texttt{sacar}: para realizar um saque, subtraindo um valor do saldo (verificando se há saldo suficiente).
+      \item \texttt{exibir\_saldo}: para consultar o saldo atual da conta.
+    \end{itemize}
+
+    Implemente um programa que permita ao usuário criar uma nova conta bancária, realizar depósitos, saques e consultar o saldo. O programa deve armazenar todas as contas em um arquivo chamado \texttt{contas.json}.
+
+    Ao iniciar o programa, ele deve tentar carregar as contas bancárias previamente salvas. Se o arquivo \texttt{contas.json} não existir, o programa deve permitir ao usuário inserir os dados da conta, como o \texttt{titular} e o \texttt{numero} da conta. Caso o arquivo já exista, o programa deve garantir que ele seja válido (ou seja, que contenha dados no formato JSON corretamente estruturados) e carregar as contas armazenadas, para que o usuário possa consultar ou atualizar as informações existentes.
+
+    Além disso, implemente tratamento de exceções para garantir que o arquivo seja manipulado corretamente e que erros, como tentativas de saque com saldo insuficiente ou valores inválidos de depósito/saque, sejam devidamente tratados.
+
+  \item Implemente um gerenciador de tarefas onde o usuário pode adicionar novas tarefas, marcar tarefas como concluídas e visualizar a lista de tarefas. Para isso, crie uma classe \texttt{Tarefa} com os seguintes atributos:
+    \begin{itemize}
+      \item \texttt{titulo}: o nome da tarefa.
+      \item \texttt{descricao}: detalhes adicionais sobre a tarefa.
+      \item \texttt{status}: um valor booleano (\texttt{True} ou \texttt{False}) que indica se a tarefa foi concluída ou não.
+    \end{itemize}
+
+    Em seguida, crie uma classe \texttt{GerenciadorDeTarefas}, responsável por armazenar e manipular as tarefas. A classe deve permitir adicionar tarefas, marcar tarefas como concluídas e exibir a lista de todas as tarefas.
+
+    O programa deve salvar as tarefas em um arquivo \texttt{tarefas.json}. Ao iniciar, ele deve tentar carregar as tarefas salvas previamente. Sempre que uma tarefa for adicionada, alterada ou removida, o programa deve atualizar o arquivo para garantir que as tarefas sejam corretamente persistidas.
+
+    Além disso, o programa deve tratar exceções adequadas ao tentar ler ou escrever no arquivo \texttt{tarefas.json}, garantindo que erros, como problemas de leitura/escrita ou dados inválidos, sejam tratados de forma apropriada.
+
+
+  \item Implemente um sistema de gerenciamento de biblioteca com duas classes principais: \texttt{Livro} e \texttt{Biblioteca}. A classe \texttt{Livro} deve conter os seguintes atributos:
+  \begin{itemize}
+      \item \texttt{titulo}: o título do livro.
+      \item \texttt{autor}: o nome do autor do livro.
+      \item \texttt{ano\_publicacao}: o ano em que o livro foi publicado.
+  \end{itemize}
+  
+  A classe \texttt{Biblioteca} será responsável por armazenar uma coleção de livros. Ela deve incluir os seguintes métodos:
+  \begin{itemize}
+      \item \texttt{adicionar\_livro}: para adicionar um livro à biblioteca.
+      \item \texttt{remover\_livro}: para remover um livro da biblioteca, dado o seu título.
+      \item \texttt{buscar\_livro}: para buscar um livro pelo título.
+      \item \texttt{listar\_livros}: para listar todos os livros cadastrados na biblioteca.
+  \end{itemize}
+  
+  O programa deve permitir que o usuário adicione e remova livros da biblioteca, e os livros devem ser armazenados em um arquivo \texttt{biblioteca.json}. Ao iniciar o programa, ele deve carregar os livros previamente salvos no arquivo e exibir todos os livros cadastrados. Caso o arquivo \texttt{biblioteca.json} não exista, o programa deve criar um novo arquivo.
+  
+  O programa também deve garantir que não haja títulos duplicados na biblioteca. Caso o usuário tente adicionar um livro com um título já existente, o programa deve lançar uma exceção apropriada. Além disso, o programa deve tratar exceções para garantir que o arquivo \texttt{biblioteca.json} seja manipulado corretamente, lidando com possíveis erros de leitura ou escrita.
+  
+
+\end{enumerate}
+
+\end{document}
